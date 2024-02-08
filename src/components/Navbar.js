@@ -3,6 +3,7 @@ import { Search, ShoppingCartOutlined } from "@mui/icons-material";
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   height: 60px;
@@ -78,16 +79,28 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>ZESTO.</Logo>
+        <Link to='/' style={{textDecoration:'none',color:'black'}}>
+        <Logo>ZESTO</Logo>
+        </Link>
+       
         </Center>
         <Right>
-          <MenuItem>REGISTER</MenuItem>
-          <MenuItem>SIGN IN</MenuItem>
-          <MenuItem>
+        <Link to='/register' style={{textDecoration:'none',color:'black'}}>
+        <MenuItem>REGISTER</MenuItem>
+        </Link>
+        <Link to='/login'style={{textDecoration:'none',color:'black'}}>
+        <MenuItem>SIGN IN</MenuItem>
+        </Link>
+       
+       
+        <Link to='/cart'style={{textDecoration:'none',color:'black'}}>
+        <MenuItem>
             <Badge badgeContent={4} color="primary">
               <ShoppingCartOutlined />
             </Badge>
           </MenuItem>
+        </Link>
+         
         </Right>
       </Wrapper>
     </Container>

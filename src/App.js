@@ -1,13 +1,30 @@
-import React from "react";
+
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
 
+import Cart from "./pages/Cart";
+import Product from "./pages/Productt";
+import ProductList from "./pages/ProductList";
 
-function App() {
+const App = () => {
   return (
-<>
-  <Home/>
-</>
+    <>
+      <HashRouter>
+        <Routes>
+          <Route exact path="/" element={<Home/>}/>  
+            <Route path="/register" element={<Register/>} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/productlist" element={<ProductList/>} />
+            <Route path="/cart" element={<Cart/>} />
+            <Route path="/productt" element={<Product/>} />
+          
+            </Routes>
+    
+      </HashRouter>
+    </>
   );
-}
+};
 
 export default App;

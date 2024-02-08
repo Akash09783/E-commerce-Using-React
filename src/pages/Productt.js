@@ -1,10 +1,12 @@
-import { Add, Remove } from "@material-ui/icons";
+import { Add, Remove } from "@mui/icons-material";
 import styled from "styled-components";
-import Announcement from "../components/Announcement";
+import Announcement from "../components/Announcements";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/NewsLetter";
 import { mobile } from "../responsive";
+import { Link } from "react-router-dom";
+
 
 const Container = styled.div``;
 
@@ -158,7 +160,10 @@ const Product = () => {
               <Amount>1</Amount>
               <Add />
             </AmountContainer>
+            <Link to='/cart'>
             <Button>ADD TO CART</Button>
+            </Link>
+         
           </AddContainer>
         </InfoContainer>
       </Wrapper>

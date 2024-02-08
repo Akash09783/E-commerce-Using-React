@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import { Link } from "@mui/material";
 
 const Container = styled.div`
   flex: 1;
@@ -45,11 +46,18 @@ const Button = styled.button`
 const CategoryItem = ({ item }) => {
   return (
     <Container>
-      <Image src={item.img} />
-      <Info>
+   
+
+    <Info>
         <Title>{item.title}</Title>
+        <Link to='/productt'>
         <Button>SHOP NOW</Button>
+        </Link>
+     
       </Info>
+   
+      <Image src={item.img} />
+    
     </Container>
   );
 };
