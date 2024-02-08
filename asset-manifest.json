@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Akash09783/E-commerce-Using-React/static/js/main.40392b76.js",
-    "index.html": "/Akash09783/E-commerce-Using-React/index.html",
-    "main.40392b76.js.map": "/Akash09783/E-commerce-Using-React/static/js/main.40392b76.js.map"
+    "main.js": "/E-commerce-Using-React/static/js/main.e5b6333d.js",
+    "index.html": "/E-commerce-Using-React/index.html",
+    "main.e5b6333d.js.map": "/E-commerce-Using-React/static/js/main.e5b6333d.js.map"
   },
   "entrypoints": [
-    "static/js/main.40392b76.js"
+    "static/js/main.e5b6333d.js"
   ]
 }
